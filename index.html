@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shruti Fitness</title>
+    <style>
+        /* CSS Reset */
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            color: rgb(8, 8, 8);
+            margin: 0px;
+            padding: 0px;
+            background: url('images/bg.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: 40%;
+            box-sizing: border-box;
+            font-size: medium;
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            padding: 0px;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 62px;
+            text-align: center;
+        }
+
+        .mid {
+            /* border: 2px solid yellow; */
+            margin: 20px auto;
+            width: 45%;
+            text-align: center;
+        }
+
+        .right {
+            /* border: 2px solid white; */
+            position: absolute;
+            top: 20px;
+            right: 62px;
+        }
+
+        .navbar {
+            display: inline-block;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .navbar li {
+            display: inline-block;
+            list-style-type: none;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            /* padding: 20px 30px; */
+            padding: 6px;
+            font-size: 20px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: white;
+            text-decoration: underline;
+            /* padding: 20px 30px; */
+            padding: 6px;
+            font-size: 25px;
+
+        }
+
+        .left img {
+            width: 62px;
+            height: 42px;
+            filter: invert(100%);
+        }
+
+        .btn {
+            margin: 0px;
+            padding: 7px;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            /* background-color: blue; */
+            text-decoration: underline;
+        }
+
+        .left div {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .container {
+            /* border: 1px solid red; */
+
+            width: 70%;
+            padding: 10px;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            margin-left: auto;
+            margin-right: auto;
+
+        }
+
+        .myform {
+            display: block;
+            margin: 17px auto;
+
+            height: 27px;
+            /* border-radius: 10px; */
+            background-color: black;
+            border: 0.5px solid white;
+            text-align: center;
+            padding: 5px;
+            width: 350px;
+
+        }
+   
+
+       div.container #message {
+            margin-left: 20px;
+            margin-right: 20px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 80px;
+            color: rgb(255, 255, 255);
+            padding-bottom: 88px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="Images/GymLogo.jpg" alt="">
+            <div>Shruti's Fitness</div>
+        </div>
+        <!-- mid for nav bar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a> </li>
+                <li> <a href="#">Contact Us</a> </li>
+                <li> <a href="#">Fitness Calculator</a> </li>
+                <li> <a href="#">Help</a></li>
+            </ul>
+        </div>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now!</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <div id="message"> Welcome to Fitness Club!</div>
+        <form action="">
+            <div>
+                <input type="text" placeholder="Enter your Name" class="myform">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your Age" class="myform">
+            </div>
+            <div>
+                <input type="text" placeholder="Enter your Email-id" class="myform">
+            </div>
+            <div>
+                <button class="btn myform">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
